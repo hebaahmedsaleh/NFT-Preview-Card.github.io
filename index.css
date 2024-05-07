@@ -1,10 +1,11 @@
 :root {
   --White: hsl(0, 0%, 100%);
-  --LightGrey: hsl(212, 45%, 89%);
-  --GrayishBlue: hsl(220, 15%, 55%);
   --Black: hsl(0, 0%, 7%);
-  --DarkBlue:  hsl(218, 44%, 22%);
-
+  --SoftBlue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --main_BG: hsl(217, 54%, 11%);
+  --card_BG: hsl(216, 50%, 16%);
+  --blue_line: hsl(215, 32%, 27%);
 }
 
 body,
@@ -16,7 +17,7 @@ section {
   padding: 0;
 }
 body {
-  background-color: var(--LightGrey);
+  background-color: var(--main_BG);
   width: 100%;
   display: flex;
   align-items: center;
@@ -34,10 +35,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--White);
+  background-color: var(--card_BG);
   color: var(--Black);
-  width: 20%;
-  min-width: 20rem;
+  min-width: 22rem;
   border-radius: 1rem;
   padding: 1.5rem 1rem 2.75rem;
   border: 1px solid transparent;
@@ -51,44 +51,93 @@ body {
     margin: 0 1rem;
   }
 
-  .qr-photo-container {
+  .main-photo-container {
     text-align: center;
-    width: 18rem;
-    height: 18rem;
   }
 
-  .qr-code {
+  .main-code {
     width: 90%;
   }
 }
 
-.qr-photo-container {
+.main-photo-container {
   text-align: center;
-  width: 18rem;
-  height: 18rem;
 }
 
-.qr-code {
+.main-code {
   border-radius: 0.5rem;
   width: 100%;
 }
 
-
 .main-content {
-  margin: 1.5rem 0 .25rem 1.5rem;
-  padding: 0 2rem 0 0.5rem;
+  margin: 1.5rem;
 }
 
 .note-text {
   font-size: 0.75rem;
   font-weight: normal;
-  color: var(--GrayishBlue);
-}
-
-.default-text {
-  color: var(--DarkBlue);
-  font-size: 1rem;
-  font-weight: bold;
+  color: var(--SoftBlue);
   margin-bottom: 1.5rem;
 }
 
+.default-text {
+  color: var(--White);
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.days-section {
+  display: flex;
+  justify-content: space-between;
+  color: var(--White);
+  align-items: center;
+}
+
+.ethereum-text {
+  color: var(--Cyan);
+}
+
+.days-text {
+  color: var(--SoftBlue);
+}
+
+.text-with-icon {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 0.25rem;
+}
+
+.avatar-container {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  margin-top: 1.5rem;
+}
+
+.avatar-img {
+  margin-inline-end: 0.5rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid var(--SoftBlue);
+  border-radius: 50%;
+}
+.avatar-name {
+  font-weight: bold;
+  color: var(--White);
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: var(--SoftBlue);
+  margin-top: 1.5rem;
+}
+
+.creation-tag {
+  color: var(--SoftBlue);
+  margin-right: .25rem;
+}
