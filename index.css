@@ -51,9 +51,6 @@ body {
     margin: 0 1rem;
   }
 
-  .main-photo-container {
-    text-align: center;
-  }
 
   .main-code {
     width: 90%;
@@ -62,6 +59,31 @@ body {
 
 .main-photo-container {
   text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+ 
+.hovered_state {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left:0;
+  bottom: 0;
+  background-color: var(--Cyan);
+  opacity: 0.6;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.main-photo {
+  background: url('./images/image-equilibrium.jpg');
+  width: 304px;
+  height: 304px;
+  background-size: contain;
 }
 
 .main-code {
@@ -140,4 +162,14 @@ body {
 .creation-tag {
   color: var(--SoftBlue);
   margin-right: .25rem;
+}
+
+.creation-tag:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+.default-text:hover {
+  color: var(--Cyan);
+  cursor: pointer;
 }
