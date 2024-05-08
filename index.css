@@ -44,19 +44,6 @@ body {
   box-sizing: border-box;
 }
 
-@media only screen and (max-width: 600px) {
-  #container {
-    width: 70%;
-    min-width: initial;
-    margin: 0 1rem;
-  }
-
-
-  .main-code {
-    width: 90%;
-  }
-}
-
 .main-photo-container {
   text-align: center;
   position: relative;
@@ -173,4 +160,21 @@ body {
 .default-text:hover {
   color: var(--Cyan);
   cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #container {
+    width: 70%;
+    min-width: initial;
+    margin: 0 1rem;
+  }
+  .main-code {
+    width: 90%;
+  }
+  
+  .main-photo {
+    width: 210px;
+    height: 210px;
+  }
 }
